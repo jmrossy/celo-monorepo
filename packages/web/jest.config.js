@@ -7,5 +7,6 @@ module.exports = {
     window: true,
   },
   preset: './node_modules/react-native-web/jest-preset.js',
+  runner: 'jest-runner-tsc',
   testEnvironment: 'node',
 }

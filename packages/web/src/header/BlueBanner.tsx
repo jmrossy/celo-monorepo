@@ -6,9 +6,8 @@ import { colors, fonts, textStyles } from 'src/styles'
 
 interface Props {
   link: string
-  children: React.ReactNode
+  children: React.ReactNode | any
 }
-
 export class BlueBanner extends React.PureComponent<Props> {
   render() {
     return (
@@ -16,8 +15,9 @@ export class BlueBanner extends React.PureComponent<Props> {
         <View style={styles.insideContainer}>
           <Text
             accessibilityRole="link"
-            target="_blank"
-            href={this.props.link}
+            // @ts-ignore
+            // target="_blank"
+            // href={this.props.link}
             style={[fonts.navigation, textStyles.medium, styles.text]}
           >
             {this.props.children}

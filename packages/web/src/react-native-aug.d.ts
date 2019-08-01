@@ -16,6 +16,7 @@ declare module 'react-native' {
     display?: 'list-item' | 'inline' | 'none' | 'inline-flex'
     transitionProperty?: string
     transitionDuration?: string
+    textRendering?: 'geometricPrecision'
   }
 
   interface ViewStyle {
